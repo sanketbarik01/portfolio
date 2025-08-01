@@ -1,12 +1,12 @@
-import { ThemeToggle } from "../components/ThemeToggle";
-import { StarBackground } from "../components/StarBackground";
-import { AboutMe } from "../components/AboutMe";
-import { SkillSection } from "../components/SkillsSection";
-import { ProjectSection } from "../components/ProjectSection";
-import { ContactSection } from "../components/ContactSection";
-import { Navbar } from "../components/navbar";
-import { HeroSection } from "../components/HeroSection";
-import { Footer } from "../components/Footer";
+import { ThemeToggle } from "../components/ThemeToggle.jsx";
+import { StarBackground } from "../components/StarBackground.jsx";
+import { AboutMe } from "../components/AboutMe.jsx";
+import { SkillSection } from "../components/SkillsSection.jsx";
+import { ProjectSection } from "../components/ProjectSection.jsx";
+import { ContactSection } from "../components/ContactSection.jsx"
+import { Navbar } from "../components/Navbar.jsx";
+import { HeroSection } from "../components/HeroSection.jsx";
+import { Footer } from "../components/Footer.jsx";
 
 export const Home = () => {
     return <div className="min-h-screen ">
