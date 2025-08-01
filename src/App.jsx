@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
       <Routes>
         <Route index element={<Home />}/>
         <Route path = "*" element = {<NotFound />} />
