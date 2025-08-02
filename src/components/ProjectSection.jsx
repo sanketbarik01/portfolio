@@ -1,12 +1,13 @@
 import { ArrowRight } from "lucide-react";
-import { Github } from "lucide-react";
+import { Github,ExternalLink } from "lucide-react";
+
 
 const projects = [
     {
         id:1,
         title: "My Portfolio",
         description: "Welcome to my portfolio! I'm a passionate developer skilled in React.js, JavaScript, Node.js,TailwindCSS and full-stack web development. This site showcases my projects, problem-solving abilities, and dedication to building clean, user-friendly applications. Explore my work to see how I turn ideas into impactful digital solutions.",
-        image: "/projects/portfolio.jpg",
+        image: "/portfolio/projects/portfolio.jpg",
         tags: ["react","TailwindCSS"],
         demoUrl: "#",
         githubUrl: "https://github.com/sanketbarik01/portfolio",
@@ -15,16 +16,16 @@ const projects = [
         id:2,
         title: "SIH FERTILIZER RECOMMENDATION APP UI ",
         description: "A clean, intuitive Figma UI for a fertilizer recommendation app featuring crop selection, soil input, weather integration, and tailored nutrient suggestions to help farmers optimize yield and environmental sustainability.",
-        image: "/projects/SIH.jpg",
+        image: "/portfolio/projects/SIH.jpg",
         tags: ["Figma","UI","SIH"],
-        demoUrl: "https://www.figma.com/design/3tyuBNdyzf2XClfluiC1q0/EDUMINATTI-ASSIGNMENT?t=7ijJsvRWc2xQpNpC-1",
+        demoUrl: "https://www.figma.com/proto/ch0ZQzwZ87k8fdIIK4ZPf2/SIH-APP-UI?node-id=0-54&starting-point-node-id=0%3A54&t=CEXr8l5UtEHZWYHj-1",
         githubUrl: "#",
     },
     {
         id:3,
         title: "EDUMINNATI PROJECT",
         description: "EduMinnati is a smart recommendation platform that helps students discover top schools and universities using Al-driven filters based on location, courses, fees, rankings, and user preferences.",
-        image: "/projects/EDUMINATI.png",
+        image: "/portfolio/projects/EDUMINATI.png",
         tags: ["Figma","UI","SIH"],
         demoUrl: "https://www.figma.com/design/3tyuBNdyzf2XClfluiC1q0/EDUMINATTI-ASSIGNMENT?t=7ijJsvRWc2xQpNpC-1",
         githubUrl: "#",
@@ -34,7 +35,8 @@ export const ProjectSection = () => {
     return (
     <section id="projects" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl md-4xl fnt-bold mb-4 text-center">Featured <span className="text-primary">Projects</span></h2>
+            <h2 className="text-3xl md-4xl fnt-bold mb-4 text-center">
+                Featured <span className="text-primary">Projects</span></h2>
             <p className="text-center justify-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                 Explore my collection of projects that showcase my skills in web development, problem-solving, and creative thinking. <br />
                 From responsive websites to dynamic applications, each project reflects my passion for building clean, user-friendly, and efficient digital solutions. <br />
@@ -44,7 +46,9 @@ export const ProjectSection = () => {
                 {projects.map((project,key) => (
                     <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                         <div className="h-48 overflow-hidden">
-                            <img src={project.image} alt={project.title} className="w-200% h-full justify-content: center align-items: center object-fit:cover transition-transform duration-500 group-hover:scale-110"/>
+                            <img 
+                            src={project.image} 
+                            alt={project.title} className="w-200% h-full justify-content: center align-items: center object-fit:cover transition-transform duration-500 group-hover:scale-110"/>
                             <div className="p-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag) => {
@@ -55,13 +59,15 @@ export const ProjectSection = () => {
 
                                 </div>
                             </div>
-                            <h3 className="text-xl font-semibold mb-1">{projects.title}</h3>
+                            <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                             <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                             
                             <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
-                                    <a href={project.githubUrl}
-                                    className="tet-foreground/80 hover:text-primary transition-colors duration-300"><Github/></a>
+                                    <a 
+                                    href={project.githubUrl}
+                                    className="tet-foreground/80 hover:text-primary transition-colors duration-300"><Github/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
