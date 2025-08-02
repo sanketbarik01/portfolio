@@ -17,8 +17,7 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Get in <span className="text-primary">Touch</span>
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w 2xl mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae assumenda optio nisi officia eum aliquam ad eos nostrum ullam, excepturi rerum facilis culpa doloremque nesciunt placeat molestiae nihil corrupti.
-                Quam aliquid ex rerum ea? Ipsa voluptate officiis explicabo cumque iusto doloribus aliquam, fugit provident cum incidunt assumenda ducimus quo veniam suscipit fuga tempora? Laborum error ipsum quisquam rerum iusto.
+                Thank you for visiting my portfolio! If you have any questions, ideas, or opportunities you'd like to discuss, feel free to reach out. I'm always open to new collaborations, freelance projects, internships, or simply connecting with fellow tech enthusiasts. Whether it's about web development, embedded systems, or anything tech-related, I’d love to hear from you. You can contact me directly via email or connect with me on LinkedIn. I believe great conversations can lead to even greater possibilities. Let’s build something innovative and impactful together. Looking forward to connecting with you!
             </p>
             <div className="grid grid-cols-1 md;grid-cols-2 gap-12">
                 <div className="space-y-8">
@@ -65,7 +64,7 @@ export const ContactSection = () => {
                             <a href="https://www.linkedin.com/in/sanket-barik/">
                                 <Linkedin/>
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/sanket.barik11?igsh=aWN4ZzhvZnQ4NnVq">
                                 <Instagram/>
                             </a>
                             <a href="#">
