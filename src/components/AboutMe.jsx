@@ -20,7 +20,7 @@ export const AboutMe = () => {
                             <a href="#Contact" className="cosmic-button ">Get In Touch
                             </a>
                             
-                            <a href="/portfolio/projects/RESUME (1).pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download CV
+                            <a href="/portfolio/projects/RESUME.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download CV
                             </a>
                         </div>
                 </div>

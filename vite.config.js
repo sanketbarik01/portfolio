@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss()
   ],
   // base:'/portfolio/',
-  base: process.env.VERCEL ? '/' : '/portfolio/',
+  base: process.env.NODE_ENV === 'production' && process.env.VERCEL ? '/' : '/portfolio/',
   resolve:{
     alias:{
       "@":path.resolve(__dirname,"./src"),
