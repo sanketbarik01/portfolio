@@ -82,7 +82,7 @@ export const ContactSection = () => {
                             <input type="text" id="name"
                             name = "name"
                             required 
-                            className="w-full px-4 pu-3 rounded-md border-input bg-background focus:outline-hidden focus:ring-2
+                            className="w-full px-4 pu-3 rounded-md border-input bg-background text-white placeholder-white focus:outline-hidden focus:ring-2
                             "
                             placeholder="SANKET BARIK" />
                         </div>
@@ -93,7 +93,8 @@ export const ContactSection = () => {
                             <input type="email" id="email"
                             name = "email"
                             required 
-                            className="w-full px-4 pu-3 rounded-md  border-input bg-background focus:outline-hidden focus:ring-2
+                            className="w-full px-4 pu-3 rounded-md  border-input bg-background 
+                            text-white placeholder-white focus:outline-hidden focus:ring-2
                             "
                             placeholder="hello@gmail.com" />
                         </div>
@@ -104,7 +105,8 @@ export const ContactSection = () => {
                             <textarea id="message"
                             name = "message"
                             required 
-                            className="w-full px-4 pu-3 rounded-md border-input bg-background focus:outline-hidden focus:ring-2 resize-none
+                            className="w-full px-4 pu-3 rounded-md border-input bg-background 
+                            text-white placeholder-white focus:outline-hidden focus:ring-2 resize-none
                             "
                             placeholder="Hello  , I would like to talk about" />
                         </div>
