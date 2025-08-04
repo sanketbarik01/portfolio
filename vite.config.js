@@ -8,7 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base:'/portfolio/',
+  // base:'/portfolio/',
+  base: process.env.VERCEL ? '/' : '/portfolio/',
   resolve:{
     alias:{
       "@":path.resolve(__dirname,"./src"),
